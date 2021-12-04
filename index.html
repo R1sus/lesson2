@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <base href="https://jysk.ua/">  -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lesson 2: Semantic HTML">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Author">
+    <noscript>Your browser does not support JavaScript!</noscript>
+    <style>
+        /* p {
+            color: red;
+        } */
+    </style>
+    <!-- <script src="link.com" type="application/javascript"></script> ссылка на код  -->
+    <title>Lesson 2</title>
+</head>
+<body>
+    <header style="border: 2px double navajowhite; height: 300px;">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo" width="100">
+        </div>
+        <nav>
+            <ol>
+                <li><a href="vitalnya">Кухня</a></li>
+                <li><a href="dlya-vikon">Для окон</a></li>
+                <li><a href="#second">Section 2</a></li>
+                <li><a href="#third">Section 3</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section id="first" style="height: 400px; background-color: aliceblue;">
+                <h1>First section</h1>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <td colspan="3">Total: 3</td>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Alex</td>
+                            <td>22-33-44</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Mike</td>
+                            <td>22-33-44</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Ann</td>
+                            <td>22-33-44</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="second" style="background-color: antiquewhite;">
+                <h1>Second section</h1>
+                <blockquote>
+                    When one teaches, two learn.
+                </blockquote>
+                <q> When one teaches, two learn.</q>
+                <hr>
+                <figure>
+                    <img src="img/demon-2000x1500.jpg" alt="Demon" width="200">
+                    <figcaption>White demon</figcaption>
+                </figure>
+                <!-- br -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo lorem mauris, quis sagittis ante fermentum quis. Nulla posuere sem eu ex interdum molestie. Fusce sit amet tortor dictum urna malesuada gravida sit amet a justo. Nunc rhoncus erat id neque molestie euismod. Nullam quis venenatis diam, ac vestibulum massa. Nullam faucibus massa sed lorem porttitor feugiat eu quis ligula. Aenean a iaculis lorem, in tincidunt nisl. Sed tempus maximus sapien et dignissim.</p>
+                <p>
+                    Lorem ipsum dolor<sub>sit</sub> amet, consectetur adipiscing elit. Sed commodo <sup>lorem mauris,</sup>
+                </p>
+            </section>
+            <section id="third">
+                <h1>Third section</h1>
+                <p><em>Кошки</em> это милые животные.</p>
+                <p><strong>Кошки</strong> это милые животные.</p>
+                <p><small>Так говорит твоя подружка</small></p>
+                <p>Кто твой любимый доктор (в сериале <cite>Доктор Кто</cite>)?</p>
+                <h6>H6 heading</h6>
+                <p> тег
+                    <code>
+                        span
+                    </code> строчный элемент и используется для текста
+                </p>
+            
+                <ol start="3" type="i"> 
+                    <li><span>Some text</span></li>
+                    <li><span>Some text</span></li>
+                    <li><span>Some text</span></li>
+                    <li><span>Some text</span></li>
+                    <li><span>Some text</span></li>
+                    <li><span>Some text</span></li>
+                    <li><span>Some text</span></li>
+                    <li><span>Some text</span></li>
+                    <li><span>Some text</span></li>
+                    <li><span>Some text</span></li>
+                </ol>
+            </section>
+        </article>
+        <div>
+            <h2>Media tags</h2>
+            <div> 
+                <h3>Video tag</h3>
+                <video width="320" height="240" controls muted>
+                    <!-- <source src="video/sample.mp4" type="video/ogg"> -->
+                    <source src="video/sample.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div> 
+                <h3>Audio tag</h3>
+                <audio controls>
+                    <!-- <source src="audio/sample.ogg" type="audio/ogg"> -->
+                    <source src="audio/sample.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+
+            </div>
+            <div> 
+                <h3>Iframe tag</h3>
+                <iframe src="https://giphy.com/embed/SWoSkN6DxTszqIKEqv" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/SWoSkN6DxTszqIKEqv">via GIPHY</a></p>
+            </div>
+            <img src="https://i.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.webp" alt="gif">
+        </div>
+        <div>
+            <h2>Forms</h2>
+            <form action="mailto:nadyabal@gmail.com" method="post" enctype="text/plain">
+                <fieldset>
+                    <legend>Общая информация</legend>
+                    <label for="text">Имя</label> 
+                    <input id="text" type="text" name="name" maxlength="5" disabled value="Nadiia"><br>
+                    <label for="age">Возраст</label>
+                    <select name="select-age" id="age">
+                        <option value="adult">Мне больше 18</option>
+                        <option value="child">Мне меньше 18</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Контактная информация</legend>
+                    <input type="email" name="email" placeholder="Введите почту"><br>
+                    <input type="tel" name="tel" placeholder="Введите номер телефона"><br>
+                    <input type="number" placeholder="тут цифры только можно писать"><br>
+                </fieldset>
+                <label for="programmer">Я хочу быть программистом</label>
+                <input type="checkbox" id="programmer"><br>
+                <label for="date">Дата</label>
+                <input type="date"><br>
+                <label for="date-time">Дата и время</label>
+                <input type="datetime-local" id="date-time"><br>
+                <label for="pass">Пароль</label>
+                <input type="password" id="pass" name="password"><br>
+                <label for="search">Поиск</label>
+                <input type="search" id="search"><br>
+                <label for="description"></label>
+                <textarea id="description" name="description" placeholder="Немного обо мне..." maxlength="5"></textarea><br>
+                <input type="submit" value="Кнопка Отправить"><br><br>
+                <button type="submit" class="btn" disabled>Отправить</button>
+            </form>
+        </div>
+        <div>
+            <h2>Interactive tags</h2>
+            <details>
+                <summary>Details</summary>
+                Something small enough to escape casual notice.
+                Something small enough to escape casual notice.
+                Something small enough to escape casual notice.
+                Something small enough to escape casual notice.
+                Something small enough to escape casual notice.
+                Something small enough to escape casual notice.
+                Something small enough to escape casual notice.
+                Something small enough to escape casual notice.
+            </details>
+            <dialog open>This is an open dialog window</dialog>
+        </div>
+    </main>
+    <footer>
+        Some footer content
+        <p>Coffee &#9749;</p>
+        <p>Snow &#10054;</p>
+        <address>
+            <p>W3C в Twitter:
+            <p><a href="https://twitter.com/w3c">@w3c</a>
+        </address>
+        <time>2021-12</time>
+    </footer>
+    
+    
+</body>
+</html>
